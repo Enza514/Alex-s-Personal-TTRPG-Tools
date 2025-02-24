@@ -20,17 +20,22 @@ The roadmap as of 2025, Feburary the 24.
 The Basics
 - [x] Add the most basic ReadMe
 - [x] Start Adding lots of stuff to do
+
 Still Basic      
 - [ ] Create a command line interface for most basic inter actions.
 - [ ] Add dice rollers.
+
 Less Basic
 - [ ] Name generators per Species, Region, Item, ETC.
 - [ ] Ways to out what information is in what book. (Show page refference?)
+
 Advanced
 - [ ] Ways to compare 2014 D&D vs 2024 D&D ( Data science project? )
 - [ ] Map Generator ( Seperate and integrate later? )
+
 Very Advanced
 - [ ] Add AI in some capacity ( Different project? )
+
 The Far Future
 - [ ] Docker support
 - [ ] Windows/Linux
