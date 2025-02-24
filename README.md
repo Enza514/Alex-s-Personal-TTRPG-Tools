@@ -15,7 +15,7 @@ A repository for my personal TTRPG tools for setting up, organizing, and GM'ing 
 <!-- ROADMAP -->
 ## Roadmap
 
-The roadmap as of 2022, Feburary the 24.
+The roadmap as of 2025, Feburary the 24.
 
 The Basics
 - [x] Add the most basic ReadMe
