@@ -17,29 +17,31 @@ A repository for my personal TTRPG tools for setting up, organizing, and GM'ing 
 
 The roadmap as of 2025, Feburary the 24.
 
-The Basics
+Done
 - [x] Add the most basic ReadMe
 - [x] Start Adding lots of stuff to do
 
-Still Basic      
-- [ ] Create a command line interface for most basic inter actions.
-- [ ] Add dice rollers.
-
-Less Basic
-- [ ] Name generators per Species, Region, Item, ETC.
+ToDo      
+- [ ] Create a command line interface for most basic inter actions
+- [ ] Add dice rollers
+- [ ] Encounter builder
+- [ ] Loot Table generators per location type and party level
+- [ ] NPC with limited backstory/situation generator
+- [ ] Simple quest generator
+- [ ] Name generators per Species, Region, Item, ETC
+- [ ] Other type of talbe formate generators with output to CVS, PDF, etc: NPC, Names, Loot, ...
+- [ ] Version of the above for 2014 and 2024 Rules
 - [ ] Ways to out what information is in what book. (Show page refference?)
-
-Advanced
 - [ ] Ways to compare 2014 D&D vs 2024 D&D ( Data science project? )
 - [ ] Map Generator ( Seperate and integrate later? )
+- [ ] Way to easily create or format tokens from stock images or freely availibe images for print in various print templets
+- [ ] Locally hosted web interface to replace cammand line interface
 
-Very Advanced
+Maybe other projects
 - [ ] Add AI in some capacity ( Different project? )
-
-The Far Future
 - [ ] Docker support
-- [ ] Windows/Linux
-- [ ] Android
+- [ ] Windows/Linux support
+- [ ] Android version?
  
 
 <!-- TODO
