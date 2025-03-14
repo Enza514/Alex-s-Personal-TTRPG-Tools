@@ -22,13 +22,14 @@ Done
 - [x] Start Adding lots of stuff to do
 
 ToDo      
-- [ ] Create a command line interface for most basic inter actions
-- [ ] Add dice rollers
+- [x] Create a command line interface for most basic inter actions
+- [x] Add dice rollers
 - [ ] Encounter builder
 - [ ] Loot Table generators per location type and party level
 - [ ] NPC with limited backstory/situation generator
 - [ ] Simple quest generator
-- [ ] Name generators per Species, Region, Item, ETC
+- [x] Name generators per Species
+- [ ] Name generators for Regions, Item, ETC
 - [ ] Other type of talbe formate generators with output to CVS, PDF, etc: NPC, Names, Loot, ...
 - [ ] Version of the above for 2014 and 2024 Rules
 - [ ] Ways to out what information is in what book. (Show page refference?)
