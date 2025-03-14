@@ -1,11 +1,13 @@
 import random
 import re
 
+
 class Dice:
     """ Class to handle rolling dice based on user input."""
     def __init__(self, dice_input):
         self.dice_input = dice_input.strip()
-    
+
+
     def roll(self):
         """ Roll the dice based on the user input."""
         dice_patterns = re.findall(r"(\d*)d(\d+)", self.dice_input, re.IGNORECASE)
@@ -17,9 +19,10 @@ class Dice:
         modifier = 0
         if modifier_choice in ("each", "total"):
             modifier = int(input("Enter the modifier value: "))
-        
+            
         total_rolls = []
         grand_total = 0
+        
         for num, sides in dice_patterns:
             num_dice = int(num) if num else 1  # Default to 1 if omitted
             dice_sides = int(sides)
