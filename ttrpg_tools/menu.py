@@ -1,5 +1,18 @@
+import os
+import sys
 from ttrpg_tools.dice import Dice
 from ttrpg_tools.name_generator import NameGenerator
+
+
+""" defines how CLEAR functions based on the platform"""
+if sys.platform in ('linux', 'darwin'):
+    CLEAR = 'clear'
+elif sys.platform == 'win32':
+    CLEAR = 'cls'
+else:
+    print('Platfrom not supported', file=sys.stderr)
+    exit(1)
+
 
 class Menu:
     """Class to handle the main menu and user input"""
@@ -15,17 +28,72 @@ class Menu:
             print(f"Option {key}: {value}")
 
 
+    def input_loop(self):
+        """Main input loop for the menu"""
+        while True:
+            self.print_options(self.main_options)
+            user_input = input("What would you like to do? (q to quit) ")
+            if user_input.lower() == "q" or user_input == "3":
+                clear_term()
+                break
+            
+            elif user_input == "1":
+                clear_term()
+                self.roll_dice()
+            
+            elif user_input == "2":
+                clear_term()
+                self.generate_names()
+            
+            else:
+                clear_term()
+                print("Invalid input. Please try again.")
+
+
+    def generate_names(self):
+        """Generate names based on user input"""
+        generator = NameGenerator()
+        while True:
+            self.print_options(self.name_options)
+            user_input = input("What would you like to do? (q to quit) ")
+            if user_input.lower() == "q" or user_input == "5":
+                clear_term()
+                break
+            
+            elif user_input == "1":
+                clear_term()
+                self.generate_fantasy_names(generator)
+            
+            elif user_input == "2":
+                clear_term()
+                self.add_new_race(generator)
+            
+            elif user_input == "3":
+                clear_term()
+                self.delete_race(generator)
+            
+            elif user_input == "4":
+                clear_term()
+                self.list_races(generator)
+            
+            else:
+                clear_term()
+                print("Invalid input. Please try again.")
+
+
     def roll_dice(self):
         """Roll dice based on user input"""
         
-        while True: 
-                    user_input = input("What dice and how many would you like to roll? (r to return to main menu) ")
+        while True:
+            user_input = input("What dice and how many would you like to roll? (r to return to main menu) ")
                     
-                    if user_input.lower() == "r":
-                        break
-                    
-                    dice = Dice(user_input)
-                    dice.roll()
+            if user_input.lower() == "r":
+                clear_term()
+                break
+            
+            clear_term()        
+            dice = Dice(user_input)
+            dice.roll()
 
 
     def generate_fantasy_names(self, generator):
@@ -125,43 +193,6 @@ class Menu:
             print(f"  Suffixes ({len(components['suffixes'])}): {', '.join(components['suffixes'])}")
 
 
-    def input_loop(self):
-        while True:
-            self.print_options(self.main_options)
-            user_input = input("What would you like to do? (q to quit) ")
-            if user_input.lower() == "q" or user_input == "3":
-                break
-            
-            elif user_input == "1":
-                self.roll_dice()
-            
-            elif user_input == "2":
-                self.generate_names()
-            
-            else:
-                print("Invalid input. Please try again.")
-
-
-    def generate_names(self):
-        """Generate names based on user input"""
-        generator = NameGenerator()
-        while True:
-            self.print_options(self.name_options)
-            user_input = input("What would you like to do? (q to quit) ")
-            if user_input.lower() == "q" or user_input == "5":
-                break
-            
-            elif user_input == "1":
-                self.generate_fantasy_names(generator)
-            
-            elif user_input == "2":
-                self.add_new_race(generator)
-            
-            elif user_input == "3":
-                self.delete_race(generator)
-            
-            elif user_input == "4":
-                self.list_races(generator)
-            
-            else:
-                print("Invalid input. Please try again.")
+def clear_term() -> None:
+    """Clear the terminal screen"""
+    os.system(CLEAR)
