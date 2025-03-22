@@ -1,0 +1,129 @@
+{
+    "simple": {
+        "positive": [
+            "the Great",
+            "the Wise",
+            "the Brave",
+            "the Mighty",
+            "the Noble",
+            "the Just",
+            "the Merciful",
+            "the Blessed",
+            "the Bold",
+            "the Brilliant",
+            "the Valiant",
+            "the Magnificent",
+            "the Defender",
+            "the Devoted",
+            "the Faithful"
+        ],
+        "negative": [
+            "the Cursed",
+            "the Cruel",
+            "the Wicked",
+            "the Terrible",
+            "the Grim",
+            "the Vile",
+            "the Feared",
+            "the Ruthless",
+            "the Dark",
+            "the Dreadful",
+            "the Tyrant",
+            "the Fallen",
+            "the Betrayer",
+            "the Accused",
+            "the Malicious"
+        ]
+    },
+    "complex": {
+        "positive": {
+            "prefixes": [
+                "The Hero of",
+                "The Guardian of",
+                "The Savior of",
+                "The Protector of",
+                "The Champion of",
+                "The Defender of",
+                "The Liberator of",
+                "The Light of",
+                "The Shield of",
+                "The Sword of",
+                "The Hope of",
+                "The Friend of",
+                "The Righteous Hand of",
+                "The Blessed One of",
+                "The Chosen of"
+            ],
+            "locations": [
+                "the Western Realms",
+                "the Eastern Kingdoms",
+                "the Northern Lands",
+                "the Southern Isles",
+                "the Misty Mountains",
+                "the Golden Valley",
+                "the Shimmering Forest",
+                "the Sacred Grove",
+                "the Crystal Shores",
+                "the Emerald Hills",
+                "the Sunlit Plains",
+                "the Azure Coast",
+                "the Verdant Woods",
+                "the Peaceful Meadows",
+                "the Radiant Peaks"
+            ]
+        },
+        "negative": {
+            "prefixes": [
+                "The Scourge of",
+                "The Terror of",
+                "The Bane of",
+                "The Destroyer of",
+                "The Nightmare of",
+                "The Plague of",
+                "The Doom of",
+                "The Butcher of",
+                "The Curse of",
+                "The Ravager of",
+                "The Shadow of",
+                "The Defiler of",
+                "The Tormentor of",
+                "The Despoiler of",
+                "The Devourer of"
+            ],
+            "creations": [
+                "the Scarred Beast",
+                "the Twisted Creature",
+                "the Corrupted Soul",
+                "the Fallen Knight",
+                "the Vengeful Spirit",
+                "the Cursed Wanderer",
+                "the Raging Beast",
+                "the Dark Sorcerer",
+                "the Bloodthirsty Monster",
+                "the Forgotten Heretic",
+                "the Merciless Killer",
+                "the Faceless Horror",
+                "the Wretched Abomination",
+                "the Sinister Specter",
+                "the Deathless Warlord"
+            ],
+            "origins": [
+                "from the Depths",
+                "from the Shadows",
+                "from the Abyss",
+                "from the Void",
+                "from the Netherworld",
+                "from the Darkness",
+                "from the Eternal Night",
+                "from the Forgotten Realm",
+                "from the Cursed Lands",
+                "from the Forsaken Wastes",
+                "from the Blighted Marsh",
+                "from the Charred Ruins",
+                "from the Howling Chasm",
+                "from the Crushing Deep",
+                "from the Ashen Plains"
+            ]
+        }
+    }
+}
