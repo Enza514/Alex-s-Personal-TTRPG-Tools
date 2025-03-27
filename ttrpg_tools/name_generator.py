@@ -17,10 +17,12 @@ class NameGenerator:
                 with open(self.data_file, 'r') as file:
                     self.races = json.load(file)
                 print(f"Successfully loaded {len(self.races)} races from {self.data_file}")
+                
             else:
                 print(f"Data file {self.data_file} not found. Creating with default races.")
                 self.create_default_races()
                 self.save_races()
+                
         except Exception as e:
             print(f"Error loading races: {e}")
             print("Creating default races instead.")
@@ -56,6 +58,7 @@ class NameGenerator:
             with open(self.data_file, 'w') as file:
                 json.dump(self.races, file, indent=2)
             print(f"Successfully saved races to {self.data_file}")
+            
         except Exception as e:
             print(f"Error saving races: {e}")
 

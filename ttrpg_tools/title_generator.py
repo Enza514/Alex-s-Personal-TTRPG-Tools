@@ -17,10 +17,12 @@ class TitleGenerator:
                 with open(self.data_file, 'r') as file:
                     self.title_data = json.load(file)
                 print(f"Successfully loaded title data from {self.data_file}")
+                
             else:
                 print(f"Data file {self.data_file} not found. Creating with default title components.")
                 self.create_default_title_data()
                 self.save_title_data()
+                
         except Exception as e:
             print(f"Error loading title data: {e}")
             print("Creating default title data instead.")
@@ -88,6 +90,7 @@ class TitleGenerator:
             with open(self.data_file, 'w') as file:
                 json.dump(self.title_data, file, indent=2)
             print(f"Successfully saved title data to {self.data_file}")
+            
         except Exception as e:
             print(f"Error saving title data: {e}")
 
@@ -110,6 +113,7 @@ class TitleGenerator:
             prefix = random.choice(self.title_data["complex"][sentiment]["prefixes"])
             location = random.choice(self.title_data["complex"][sentiment]["locations"])
             return f"{prefix} {location}"
+        
         else:
             prefix = random.choice(self.title_data["complex"][sentiment]["prefixes"])
             creation = random.choice(self.title_data["complex"][sentiment]["creations"])
@@ -121,8 +125,10 @@ class TitleGenerator:
         """Generate a title with the specified complexity and sentiment"""
         if complexity.lower() == "simple":
             return self.generate_simple_title(sentiment)
+        
         elif complexity.lower() == "complex":
             return self.generate_complex_title(sentiment)
+        
         else:
             return f"Invalid complexity. Choose 'simple' or 'complex'."
 
@@ -140,6 +146,7 @@ class TitleGenerator:
         
         if complexity == "simple":
             self.title_data[complexity][sentiment].extend(new_components)
+            
         else:  # complex
             if component_type not in ["prefixes", "locations", "creations", "origins"]:
                 return f"Invalid component type for complex titles."
@@ -152,6 +159,7 @@ class TitleGenerator:
             
             if component_type in self.title_data[complexity][sentiment]:
                 self.title_data[complexity][sentiment][component_type].extend(new_components)
+                
             else:
                 return f"Invalid component type for {sentiment} {complexity} titles."
         

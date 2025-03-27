@@ -1,0 +1,106 @@
+{
+    "terrain": {
+        "generic": [
+            "Valley",
+            "Hills",
+            "Plains",
+            "Plateau",
+            "Meadows",
+            "Woods",
+            "Forest",
+            "Glade",
+            "Highlands",
+            "Lowlands"
+        ],
+        "mountain": [
+            "Peak",
+            "Mountains",
+            "Crags",
+            "Highlands",
+            "Cliffs",
+            "Summit",
+            "Ranges",
+            "Peaks",
+            "Ridgeline",
+            "Escarpment"
+        ],
+        "water": [
+            "Bay",
+            "Coast",
+            "Shore",
+            "Islands",
+            "Archipelago",
+            "Reef",
+            "Cove",
+            "Delta",
+            "Lagoon",
+            "Inlet"
+        ]
+    },
+    "prefixes": {
+        "mystical": [
+            "Mystic",
+            "Enchanted",
+            "Eternal",
+            "Forgotten",
+            "Sacred",
+            "Whispering",
+            "Moonlit",
+            "Starry",
+            "Ethereal",
+            "Radiant"
+        ],
+        "geographical": [
+            "Misty",
+            "Verdant",
+            "Emerald",
+            "Golden",
+            "Silver",
+            "Azure",
+            "Crimson",
+            "Crystal",
+            "Shadow",
+            "Hidden"
+        ]
+    },
+    "suffixes": {
+        "descriptive": [
+            "Haven",
+            "Realm",
+            "Domain",
+            "Kingdom",
+            "Lands",
+            "Territory",
+            "Dominion",
+            "Expanse",
+            "Sanctuary",
+            "Frontier"
+        ],
+        "mysterious": [
+            "Whisper",
+            "Secret",
+            "Dream",
+            "Prophecy",
+            "Destiny",
+            "Legend",
+            "Myth",
+            "Wonder",
+            "Enigma",
+            "Harmony"
+        ],
+        "mystical": [
+            "Sanctuary",
+            "Stronghold",
+            "Enclave",
+            "Bastion",
+            "Citadel"
+        ],
+        "geographical": [
+            "Dominion",
+            "Kingdom",
+            "Territories",
+            "Realm",
+            "Expanse"
+        ]
+    }
+}
