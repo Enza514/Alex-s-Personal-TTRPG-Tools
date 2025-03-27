@@ -30,7 +30,8 @@ ToDo
 - [ ] Simple quest generator
 - [x] Name generators per Species
 - [x] Title generator ( ex: Felix "The hero of the western kingdoms )
-- [ ] Name generators for Regions, Item, ETC
+- [x] Name generators for locations
+- [ ] Item generator in the style of D&D
 - [ ] Other type of talbe formate generators with output to CVS, PDF, etc: NPC, Names, Loot, ...
 - [ ] Version of the above for 2014 and 2024 Rules
 - [ ] Ways to out what information is in what book. (Show page refference?)
