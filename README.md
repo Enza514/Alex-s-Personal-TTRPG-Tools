@@ -32,7 +32,7 @@ ToDo
 - [x] Title generator ( ex: Felix "The hero of the western kingdoms )
 - [x] Name generators for locations
 - [ ] Item generator in the style of D&D
-- [ ] Other type of talbe formate generators with output to CVS, PDF, etc: NPC, Names, Loot, ...
+- [ ] Other type of table formate generators with output to CVS, PDF, etc: NPC, Names, Loot, ...
 - [ ] Version of the above for 2014 and 2024 Rules
 - [ ] Ways to out what information is in what book. (Show page refference?)
 - [ ] Ways to compare 2014 D&D vs 2024 D&D ( Data science project? )
